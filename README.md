@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/pawandubey/fnv-hash.svg?branch=master)](https://travis-ci.org/pawandubey/fnv-hash)  [![codecov](https://codecov.io/gh/pawandubey/fnv-hash/branch/master/graph/badge.svg)](https://codecov.io/gh/pawandubey/fnv-hash)
+[![Build Status](https://travis-ci.org/pawandubey/fnv-hash.svg?branch=master)](https://travis-ci.org/pawandubey/fnv-hash)  [![codecov](https://codecov.io/gh/pawandubey/fnv-hash/branch/master/graph/badge.svg)](https://codecov.io/gh/pawandubey/fnv-hash)  [![Gem Version](https://badge.fury.io/rb/fnv-hash.svg)](https://badge.fury.io/rb/fnv-hash)
 
 # Fnv::Hash
 
