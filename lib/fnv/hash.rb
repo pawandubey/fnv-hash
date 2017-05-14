@@ -1,7 +1,7 @@
 require "fnv/hash/version"
 
 module Fnv
-  module Hash
+  class Hash
     OFFSET_BASIS = {
       32 => 0x811c9dc5,
       64 => 0xcbf29ce484222325,
@@ -20,6 +20,13 @@ module Fnv
       128 => 340282366920938463463374607431768211455
     }
 
+    # Calculates the FNV-1 hash for the given
+    # item value
+    #
+    # @param item The item to hash
+    # @param size [Integer] the size of the resulting hash
+    #
+    # @return [Integer] the calculated hash value
     def self.fnv_1(item, size: 32)
       offset_basis = OFFSET_BASIS.fetch(size)
       prime = PRIME.fetch(size)
@@ -34,6 +41,13 @@ module Fnv
       hash
     end
 
+    # Calculates the FNV-1a hash for the given
+    # item value
+    #
+    # @param item The item to hash
+    # @param size [Integer] the size of the resulting hash
+    #
+    # @return [Integer] the calculated hash value
     def self.fnv_1a(item, size: 32)
       offset_basis = OFFSET_BASIS.fetch(size)
       prime = PRIME.fetch(size)
