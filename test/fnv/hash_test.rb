@@ -2,7 +2,7 @@ require 'test_helper'
 
 class Fnv::HashTest < Minitest::Test
   def test_that_it_has_a_version_number
-    refute_nil ::Fnv::Hash::VERSION
+    refute_nil ::Fnv::VERSION
   end
 
   def test_fnv_1

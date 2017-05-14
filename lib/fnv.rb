@@ -1,4 +1,4 @@
-require "fnv/hash/version"
+require "fnv/version"
 
 module Fnv
   class Hash

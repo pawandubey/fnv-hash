@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'fnv/hash/version'
+require 'fnv/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "fnv-hash"
-  spec.version       = Fnv::Hash::VERSION
+  spec.version       = Fnv::VERSION
   spec.authors       = ["Pawan Dubey"]
   spec.email         = ["hi@pawandubey.com"]
 
@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Provides a pure Ruby implementations of the FNV-1
                           and FNV-1a non-cryptographic hash functions.}
   spec.homepage      = "https://github.com/pawandubey/fnv-hash"
-  spec.license       = "Apache V2"
+  spec.license       = "Apache v2"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
