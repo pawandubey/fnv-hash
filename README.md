@@ -1,8 +1,8 @@
+[![Build Status](https://travis-ci.org/pawandubey/fnv-hash.svg?branch=master)](https://travis-ci.org/pawandubey/fnv-hash)
+
 # Fnv::Hash
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fnv/hash`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Pure Ruby implementation of the [Fowler-Noll-Vo Hash Algorithms](https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function)
 
 ## Installation
 
@@ -22,7 +22,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+This gem supports geting both `fnv-1` and `fnv-1a` hashes for an item. Each of these variations also supports both 32 and 64 bit versions.
+
+```ruby
+# For FNV-1
+hash = Fnv::Hash.fnv1(item, size: 32)
+
+hash_64 = Fnv::Hash.fnv1(item, size: 64)
+
+# For FNV-1a
+hash = Fnv::Hash.fnv1a(item, size: 32)
+
+hash_64 = Fnv::Hash.fnv1a(item, size: 64)
+
+```
 
 ## Development
 
