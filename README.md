@@ -26,14 +26,14 @@ This gem supports geting both `fnv-1` and `fnv-1a` hashes for an item. Each of t
 
 ```ruby
 # For FNV-1
-hash = Fnv::Hash.fnv1(item, size: 32)
+hash = Fnv::Hash.fnv_1(item, size: 32)
 
-hash_64 = Fnv::Hash.fnv1(item, size: 64)
+hash_64 = Fnv::Hash.fnv_1(item, size: 64)
 
 # For FNV-1a
-hash = Fnv::Hash.fnv1a(item, size: 32)
+hash = Fnv::Hash.fnv_1a(item, size: 32)
 
-hash_64 = Fnv::Hash.fnv1a(item, size: 64)
+hash_64 = Fnv::Hash.fnv_1a(item, size: 64)
 
 ```
 
